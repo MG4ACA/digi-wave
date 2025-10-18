@@ -273,6 +273,32 @@ body {
   min-height: 80vh;
 }
 
+.headline-bg {
+  position: absolute;
+  top: -1.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  font-weight: 700;
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
+  color: transparent;
+  -webkit-text-stroke: 1px #d5d5d5; /* Outline thickness and color */
+  text-stroke: 1px #d5d5d5; /* For non-webkit browsers */
+  font-weight: 700;
+}
+
+.headline-fg {
+  position: relative;
+  z-index: 2;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3a4250;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .text-5xl {
