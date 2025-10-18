@@ -1,85 +1,83 @@
 /* Services Component Styles */
 .services-section {
-  padding: 6rem 0;
+  position: relative;
+  background: #fafbfc;
+  padding: 3.5rem 0 3rem 0;
+  z-index: 1;
+}
+
+.services-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-headline {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #222;
+}
+.services-headline-highlight {
+  color: #0046b6;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
+  margin-top: 2.5rem;
+}
+@media (min-width: 700px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .service-card {
-  background: white;
-  border: 1px solid #e2e8f0;
-  border-radius: 0.75rem;
-  padding: 2rem;
-  transition: all 250ms ease-in-out;
+  background: none;
+  box-shadow: none;
+  border-radius: 16px;
+  padding: 2rem 1rem 1.5rem 1rem;
+  text-align: center;
+  border: none;
+  transition: box-shadow 0.2s, background 0.2s;
 }
-
 .service-card:hover {
-  box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1);
-  border-color: #0046b6;
-}
-
-.service-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  background: #fff;
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.1);
+  border: 1.5px solid #e6f0ff;
+  cursor: pointer;
 }
 
 .service-icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1rem auto;
   background: #e6f0ff;
-  border-radius: 0.75rem;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
-  color: #0046b6;
-  font-size: 1.25rem;
+  overflow: hidden;
+}
+.service-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .service-title {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: #000000;
-}
-
-.service-description {
-  color: #666666;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-.features-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 1.5rem;
-}
-
-.feature-item {
-  display: flex;
-  align-items: center;
+  color: #222;
   margin-bottom: 0.5rem;
 }
 
-.feature-icon {
-  color: #0046b6;
-  margin-right: 0.5rem;
-  font-size: 0.875rem;
-}
-
-.feature-text {
-  color: #666666;
-  font-size: 0.875rem;
-}
-
-.learn-more-btn {
-  color: #0046b6 !important;
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
-  text-decoration: none;
+.service-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
 }
