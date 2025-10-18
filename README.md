@@ -31,7 +31,6 @@ A modern, responsive single-page application built with **Next.js**, **React**, 
 - **Buttons**: Primary, Secondary, Large, Small variants
 - **Cards**: With hover effects and shadows
 - **Forms**: Consistent input styling with focus states
-- **Layout**: Container classes with responsive breakpoints
 
 ## 📱 Sections
 
@@ -118,17 +117,6 @@ Update CSS custom properties in `src/app/globals.css`:
   --primary-600: #2563eb; /* Main brand color */
   --secondary-600: #475569; /* Text color */
   --accent-600: #c026d3; /* Accent color */
-}
-```
-
-### Layout
-
-Modify container and spacing:
-
-```css
-.container {
-  max-width: 1200px; /* Max content width */
-  padding: 0 var(--spacing-4);
 }
 ```
 

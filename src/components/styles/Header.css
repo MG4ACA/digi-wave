@@ -5,14 +5,18 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 1rem 0;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 80vw;
 }
 
 .logo-section {
