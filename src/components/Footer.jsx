@@ -16,7 +16,7 @@ export default function Footer() {
           />
           <div className="footer-desc">
             A Next-Generation PR and Digital Marketing Agency riding the digital wave to transform
-            your brand's story.
+            your brand&#39;s story.
           </div>
           <div className="footer-socials">
             <span className="footer-dot" />
