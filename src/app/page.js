@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import OurAdvantage from '@/components/OurAdvantage';
+import WhyChooseUs from '@/components/WhyChooseUs';
 import Services from '@/components/Services';
 import TeamSection from '@/components/TeamSection';
 
@@ -15,7 +16,8 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <OurAdvantage />
+  <OurAdvantage />
+  <WhyChooseUs />
       <BrandLogos />
       <TeamSection />
       <Contact />
