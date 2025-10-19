@@ -1,19 +1,46 @@
-import React from 'react'
-import { Button } from 'primereact/button'
+'use client';
 
-export default function Hero(){
+import { Button } from 'primereact/button';
+import { useEffect, useState } from 'react';
+import './styles/Hero.css';
+
+export default function Hero() {
+  // Background images for rotation
+  const bgImages = [
+    '/images/hero-background-1.jpg',
+    '/images/hero-background-2.jpg',
+    '/images/hero-background-3.jpg',
+  ];
+  const [bgIndex, setBgIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setBgIndex((prev) => (prev + 1) % bgImages.length);
+        setFade(true);
+      }, 600); // fade out duration
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [bgImages.length]);
+
   return (
-    <section className="p-d-flex p-ai-center" style={{padding:'4rem 0', background:'linear-gradient(90deg,#eef2ff, #fff)'}}>
-      <div className="container p-grid p-nogutter">
-        <div className="p-col-12 p-md-6">
-          <h1 style={{marginTop:0}}>Build beautiful experiences</h1>
-          <p>We design and build modern web applications that scale.</p>
-          <Button label="Get started" icon="pi pi-arrow-right" className="p-button-primary" />
-        </div>
-        <div className="p-col-12 p-md-6">
-          <div style={{height:200, background:'#fff', borderRadius:8}}></div>
+    <section id="home" className="hero">
+      <div
+        className={`hero-bg ${fade ? 'fade-in' : 'fade-out'}`}
+        style={{ backgroundImage: `url(${bgImages[bgIndex]})` }}
+      ></div>
+      <div className="hero-overlay">
+        <div className="hero-container">
+          <h1 className="hero-title">Innovation in Every Wave</h1>
+          <p className="hero-subtitle">who you are, what you do.</p>
+          <div className="cta-buttons">
+            <Button label="Get In Touch" className="btn btn-primary" />
+            <Button label="Contact Us" className="btn btn-secondary" />
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

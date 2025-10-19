@@ -1,0 +1,72 @@
+/* Header Component Styles */
+.header {
+  background: white;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+}
+
+.logo-section {
+  flex-shrink: 0;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  transition: color 250ms ease-in-out;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+  font-weight: var(--font-weight-semibold);
+}
+
+.nav-link:hover {
+  color: #0046b6;
+}
+
+.nav-link.active {
+  color: #0046b6;
+  font-weight: 600;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none !important;
+  border: none !important;
+  color: #333 !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+}
