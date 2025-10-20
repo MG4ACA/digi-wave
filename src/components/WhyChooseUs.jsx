@@ -21,7 +21,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="why-choose-section">
+    <section className="why-choose-section" data-aos="fade-up">
       <div className="why-choose-headline">
         <div className="headline-bg font-bald">Why Choose Us</div>
         <div className="headline-fg font-bald">Why Choose Us</div>
@@ -29,7 +29,7 @@ export default function WhyChooseUs() {
       <div className="why-choose-sub">We fuse creativity and technology to grow your brand.</div>
       <div className="why-choose-features">
         {features.map((f, i) => (
-          <div className="why-choose-card" key={i}>
+          <div className="why-choose-card" key={i} data-aos="fade-in" data-aos-delay={i * 100}>
             <div className="why-choose-icon">
               <Image src={f.img} alt={f.title} width={48} height={48} />
             </div>

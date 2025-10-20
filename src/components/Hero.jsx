@@ -33,11 +33,13 @@ export default function Hero() {
       ></div>
       <div className="hero-overlay">
         <div className="hero-container">
-          <h1 className="hero-title">Innovation in Every Wave</h1>
-          <p className="hero-subtitle">who you are, what you do.</p>
-          <div className="cta-buttons">
-            <Button label="Get In Touch" className="btn btn-primary" />
-            <Button label="Contact Us" className="btn btn-secondary" />
+          <div className="hero-content" data-aos="fade-up">
+            <h1 className="hero-title">Innovation in Every Wave</h1>
+            <p className="hero-subtitle">who you are, what you do.</p>
+            <div className="cta-buttons">
+              <Button label="Get In Touch" className="btn btn-primary" />
+              <Button label="Contact Us" className="btn btn-secondary" />
+            </div>
           </div>
         </div>
       </div>

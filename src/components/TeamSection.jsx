@@ -71,7 +71,7 @@ export default function TeamSection() {
   }, [currentIndex, prev, next]);
 
   return (
-    <section className="team-section">
+    <section className="team-section" data-aos="fade-up">
       <div className="team-headline">
         <div className="headline-bg font-bald">Our Team</div>
         <div className="headline-fg font-bald">Our Team</div>

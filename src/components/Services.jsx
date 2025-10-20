@@ -27,7 +27,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="services-section">
+    <section id="services" className="services-section" data-aos="fade-up">
       <div className="relative">
         <div className="headline-bg">Our Core Services</div>
         <div className="headline-fg">Our Core Services</div>
@@ -39,7 +39,7 @@ export default function Services() {
         </h2>
         <div className="services-grid">
           {services.map((service, idx) => (
-            <div className="service-card" key={idx}>
+            <div className="service-card" key={idx} data-aos="fade-in" data-aos-delay={idx * 100}>
               <div className="service-icon">
                 <Image src={service.icon} alt={service.title + ' icon'} width={32} height={32} />
               </div>

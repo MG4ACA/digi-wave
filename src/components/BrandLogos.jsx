@@ -12,21 +12,40 @@ const logos = [
 
 export default function BrandLogos() {
   return (
-    <section className="brand-logos-section">
+    <section className="brand-logos-section" data-aos="zoom-in">
       <div className="brand-logos-bg">
-        <div className="brand-logos-row">
-          {logos.map((logo, idx) => (
-            <div className="brand-logo-item" key={idx}>
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={100}
-                height={60}
-                className="brand-logo-img"
-                draggable={false}
-              />
+        <div className="brand-logos-track">
+          <div className="brand-logos-inner">
+            <div className="brand-logos-strip" aria-hidden="false">
+              {logos.map((logo, idx) => (
+                <div className="brand-logo-item" key={idx}>
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={100}
+                    height={60}
+                    className="brand-logo-img"
+                    draggable={false}
+                  />
+                </div>
+              ))}
             </div>
-          ))}
+
+            <div className="brand-logos-strip" aria-hidden="true">
+              {logos.map((logo, idx) => (
+                <div className="brand-logo-item" key={`dup-${idx}`}>
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={100}
+                    height={60}
+                    className="brand-logo-img"
+                    draggable={false}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
