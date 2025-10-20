@@ -3,7 +3,7 @@ import './styles/Footer.css';
 
 export default function Footer() {
   return (
-    <footer className="footer-section" data-aos="fade-up">
+    <footer className="footer-section">
       <div className="footer-bg" />
       <div className="footer-content">
         <div className="footer-col footer-brand pr-6">
