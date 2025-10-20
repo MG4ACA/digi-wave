@@ -15,8 +15,8 @@ const teamMembers = [
     img: '/images/team-member-images-2.jpeg',
   },
   {
-    name: 'Member 3',
-    role: 'Position',
+    name: 'Sachithra Wickramanayake',
+    role: 'CEO & Director',
     img: '/images/team-member-images-3.jpeg',
   },
   {
