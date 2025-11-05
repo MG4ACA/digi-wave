@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from 'primereact/button';
 import './styles/Header.css';
 
@@ -12,24 +13,24 @@ export default function Header() {
         </div>
 
         <nav className="nav-menu">
-          <a href="#home" className="nav-link active">
+          <Link href="/" className="nav-link active">
             Home
-          </a>
-          <a href="#about" className="nav-link">
+          </Link>
+          <Link href="/about" className="nav-link">
             About Us
-          </a>
-          <a href="#services" className="nav-link">
+          </Link>
+          <Link href="/services" className="nav-link">
             Our Services
-          </a>
-          <a href="#advantage" className="nav-link">
+          </Link>
+          <Link href="/our-advantage" className="nav-link">
             Our Advantage
-          </a>
-          <a href="#work" className="nav-link">
+          </Link>
+          <Link href="/our-work" className="nav-link">
             Our Work
-          </a>
-          <a href="#contact" className="nav-link">
+          </Link>
+          <Link href="/contact" className="nav-link">
             Contact Us
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}

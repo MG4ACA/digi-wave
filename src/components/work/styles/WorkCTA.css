@@ -1,0 +1,86 @@
+.work-cta-section {
+  padding: 5rem 2rem;
+  background: white;
+  text-align: center;
+}
+
+.work-cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.work-cta-label {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.work-cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.text-blue {
+  color: #0066ff;
+}
+
+.work-cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.work-cta-button {
+  padding: 1rem 2.5rem !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.work-cta-button.primary {
+  background: #0066ff !important;
+  border: none !important;
+  color: white !important;
+}
+
+.work-cta-button.primary:hover {
+  background: #0052cc !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+}
+
+.work-cta-button.secondary {
+  background: transparent !important;
+  border: 2px solid #0066ff !important;
+  color: #0066ff !important;
+}
+
+.work-cta-button.secondary:hover {
+  background: #0066ff !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .work-cta-title {
+    font-size: 1.75rem;
+  }
+
+  .work-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .work-cta-button {
+    width: 100%;
+  }
+}

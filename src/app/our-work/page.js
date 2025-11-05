@@ -1,0 +1,21 @@
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import ProjectShowcase from '@/components/work/ProjectShowcase';
+import Testimonials from '@/components/work/Testimonials';
+import WorkCTA from '@/components/work/WorkCTA';
+import WorkHero from '@/components/work/WorkHero';
+import WorkStats from '@/components/work/WorkStats';
+
+export default function OurWorkPage() {
+  return (
+    <main>
+      <Header />
+      <WorkHero />
+      <ProjectShowcase />
+      <WorkStats />
+      <Testimonials />
+      <WorkCTA />
+      <Footer />
+    </main>
+  );
+}
