@@ -13,10 +13,12 @@
   gap: 2rem;
 }
 
-.work-cta-label {
-  font-size: 1.1rem;
-  color: #666;
-  font-weight: 600;
+.work-cta-header {
+  position: relative;
+  width: 100%;
+}
+.work-cta-header .headline-bg {
+  width: 100%;
 }
 
 .work-cta-title {
@@ -40,31 +42,31 @@
   padding: 1rem 2.5rem !important;
   font-size: 1.1rem !important;
   font-weight: 600 !important;
-  border-radius: 8px !important;
+  border-radius: 14px !important;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .work-cta-button.primary {
-  background: #0066ff !important;
+  background: linear-gradient(90deg, #0046b6 0%, #00ceff 100%) !important;
   border: none !important;
   color: white !important;
 }
 
 .work-cta-button.primary:hover {
-  background: #0052cc !important;
+  background: linear-gradient(90deg, #00ceff 0%, #0046b6 100%) !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
 }
 
 .work-cta-button.secondary {
-  background: transparent !important;
-  border: 2px solid #0066ff !important;
-  color: #0066ff !important;
+  background: linear-gradient(90deg, #00ceff 0%, #0046b6 100%) !important;
+  border: none !important;
+  color: white !important;
 }
 
 .work-cta-button.secondary:hover {
-  background: #0066ff !important;
+  background: linear-gradient(90deg, #0046b6 0%, #00ceff 100%) !important;
   color: white !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);

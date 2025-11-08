@@ -37,18 +37,19 @@ export default function OurStory() {
         </div>
 
         <div className="our-story-right">
-          <h4 className="our-story-label">Our Story</h4>
+          <div className="our-story-headline">
+            <div className="headline-bg font-bald">Our Story</div>
+            <div className="headline-fg font-bald">Our Story</div>
+          </div>
           <h2 className="our-story-title">
             Tranforming <span className="text-blue">ideas</span>
             <br />
-            Into Digital Reality
+            <span className="text-blue"> Into Digital Reality</span>
           </h2>
           <p className="our-story-text">
-            DigiWave holds exclusive rights of a collaboration with local brands, radio and
-            television networks, ensuring unparalleled media access for our clients. Backed by the
-            reputable Wickramanayake Holdings, we combine corporate stability with cutting-edge
-            digital and technological approaches to deliver measurable results that drive business
-            growth.
+            DigiWave helps brands embrace digital transformation with local insights, global
+            expertise, and exclusive media access. We don’t just follow trends—we create them,
+            guiding clients to succeed in the fast-changing digital world.
           </p>
 
           <div className="our-story-stats">
@@ -61,7 +62,7 @@ export default function OurStory() {
               <div className="stat-label">Projects</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">89%</div>
+              <div className="stat-number">99%</div>
               <div className="stat-label">Retention Rate</div>
             </div>
           </div>

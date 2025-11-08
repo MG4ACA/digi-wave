@@ -24,7 +24,10 @@ export default function WorkStats() {
   return (
     <section className="work-stats-section">
       <div className="work-stats-container">
-        <h3 className="work-stats-label">Our Track Record</h3>
+        <div className="work-stats-headline">
+          <div className="headline-bg font-bald">Our Track Record</div>
+          <div className="headline-fg font-bald">Our Track Record</div>
+        </div>
         <h2 className="work-stats-title">Numbers that speak to our success</h2>
 
         <div className="work-stats-grid">

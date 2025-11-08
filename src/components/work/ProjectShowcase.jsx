@@ -6,68 +6,81 @@ export default function ProjectShowcase() {
   const projects = [
     {
       id: 1,
-      icon: '🎪',
+      number: '1',
       color: 'blue',
       title: 'Galle Food Festival',
       challenge:
-        'The client needed to generate significant buzz and footfall for a new food festival in a competitive market with limited initial awareness.',
+        'To generate massive public turnout and nationwide media coverage for a premier culinary event in Galle.',
       solution:
-        'We designed a comprehensive multi-channel campaign combining influencer collaborations, geo-targeted social ads, media partnerships, and on-ground activations to create anticipation and drive attendance.',
+        'A multi-pronged campaign combining targeted social media promotions, influencer collaborations, and a strategic press outreach across our exclusive print, television, and digital media network.',
       results:
-        'Record attendance with over 15,000 visitors, extensive media coverage across TV, radio, and online platforms, and overwhelmingly positive sentiment across social channels.',
-      image: '/images/project-images-2.jpg',
-      tags: ['Event PR', 'Influencer Marketing', 'Media Relations'],
+        '"Galle Food Fest a big success." The event saw record-breaking attendance and was featured prominently in major news outlets, becoming the talk of the town.',
+      image: '/our-work/food-festival-01.jpg',
+      tags: ['Event Management', 'Media Coverage', 'Social Media', 'PR Campaign'],
+      tagColor: '#0046B6',
+      tagBackground: '#DBEAFE',
     },
     {
       id: 2,
-      icon: '🎵',
+      number: '2',
       color: 'purple',
-      title: 'ELB in Concert',
-      challenge:
-        'The project aimed to revive interest in classic Sri Lankan music for a younger, digitally-native audience while honoring the legacy of legendary artist.',
+      title: 'ELVE in Concert',
+      challenge: 'Build buzz and sell out a high-profile international concert in Sri Lanka.',
       solution:
-        'Our strategy focused on nostalgic storytelling through video teasers, behind-the-scenes content, radio spots, influencer endorsements, and targeted Facebook/Instagram campaigns to bridge generational gaps.',
+        'We crafted a powerful narrative around the event, leveraging digital advertising to target specific demographics and executing a PR blitz that included radio interviews, preview articles, and strategic social media countdowns.',
       results:
-        'Sold-out concert with 5,000+ attendees, viral social media engagement (2M+ impressions), and positive coverage in leading national publications.',
-      image: '/images/project-images-1.jpg',
-      tags: ['Digital Marketing', 'Content Creation', 'Event Management'],
+        'A highly successful and widely discussed concert, with strong media coverage and positive public sentiment.',
+      image: '/our-work/elve-concert.jpg',
+      tags: ['Digital Advertising', 'PR Campaign', 'Radio Interviews', 'Social Media'],
+      tagColor: '#723C92',
+      tagBackground: '#F5DBFE',
     },
     {
       id: 3,
-      icon: '⚓',
+      number: '3',
       color: 'orange',
       title: 'Strong Navy Campaign',
-      challenge:
-        "Raising awareness and appreciation for the Sri Lankan Navy's contributions while encouraging public support and recruitment interest.",
+      challenge: 'To enhance the public image and recruitment drive for a naval organization.',
       solution:
-        'We crafted a patriotic narrative through documentary-style videos, testimonials from naval personnel, social media storytelling, and strategic media placements to highlight their service and sacrifices.',
+        'A patriotic and empowering brand journalism and PR campaign, highlighting the strength and legacy of the navy through compelling video content, feature articles, and targeted community engagement.',
       results:
-        'Significant increase in public engagement, enhanced brand perception for the Navy, and a measurable uptick in recruitment inquiries.',
-      image: '/images/hero-background-1.jpg',
-      tags: ['Public Relations', 'Video Production', 'Media Outreach'],
+        "Increased brand affinity and successful stakeholder communication, strengthening the organization's public profile.",
+      image: '/our-work/strong-navy-campaign.jpg',
+      tags: [
+        'Brand Journalism',
+        'Video Content',
+        'Community Engagement',
+        'Stakeholder Communication',
+      ],
+      tagColor: '#D57604',
+      tagBackground: '#FEEBDB',
     },
     {
       id: 4,
-      icon: '🎭',
+      number: '4',
       color: 'green',
       title: 'Monik Legacy 24 - "We Thrive Together"',
-      challenge:
-        'The challenge was to position a cultural legacy event as a contemporary, must-attend experience while preserving its traditional essence and attracting diverse audiences.',
+      challenge: 'To launch a new brand or initiative with a powerful, community-focused message.',
       solution:
-        'We combined traditional PR with modern digital tactics—media partnerships, influencer storytelling, dynamic visual content, countdown campaigns, and interactive social engagement to build momentum.',
+        'A full-scale launch event managed by our sister company, Wickramanayake Event, amplified by DigiWave\'s integrated PR and digital strategy. We used the "We Thrive Together" mantra to build a movement, not just a campaign.',
       results:
-        'Successful event turnout exceeding expectations, widespread media coverage, trending hashtags, and strengthened community engagement around the cultural legacy.',
-      image: '/images/hero-background-2.jpg',
-      tags: ['Event Management', 'Digital Campaign', 'Brand Positioning'],
+        "A powerful and cohesive brand launch that successfully established the new entity's identity.",
+      image: '/our-work/monik-legacy.jpg',
+      tags: ['Brand Launch', 'Event Management', 'Integrated PR', 'Digital Strategy'],
+      tagColor: '#008E34',
+      tagBackground: '#DBFEEF',
     },
   ];
 
   return (
     <section className="project-showcase-section">
       <div className="project-showcase-header">
-        <h3 className="project-showcase-label">Featured Projects</h3>
+        <div className="project-showcase-headline">
+          <div className="headline-bg font-bald">Featured Projects</div>
+          <div className="headline-fg font-bald">Featured Projects</div>
+        </div>
         <h2 className="project-showcase-title">
-          Real campaign. Real results. <span className="text-blue">Real Impact</span>
+          Real campaigns, <span className="text-blue">Real results, Real impact</span>
         </h2>
       </div>
 
@@ -75,13 +88,13 @@ export default function ProjectShowcase() {
         {projects.map((project, index) => (
           <div
             key={project.id}
-            className={`project-card ${index % 2 === 0 ? 'layout-left' : 'layout-right'}`}
+            className={`project-card ${index % 2 === 0 ? 'layout-right' : 'layout-left'}`}
           >
             <div className="project-content">
-              <div className={`project-icon-wrapper bg-${project.color}`}>
-                <span className="project-icon">{project.icon}</span>
+              <div className="flex align-items-center gap-3">
+                <div className={`project-number-badge bg-${project.color}`}>{project.number}</div>
+                <h3 className="project-title">{project.title}</h3>
               </div>
-              <h3 className="project-title">{project.title}</h3>
 
               <div className="project-section">
                 <h4 className="project-section-title">The Challenge</h4>
@@ -100,7 +113,11 @@ export default function ProjectShowcase() {
 
               <div className="project-tags">
                 {project.tags.map((tag, idx) => (
-                  <span key={idx} className="project-tag">
+                  <span
+                    key={idx}
+                    className="project-tag"
+                    style={{ background: project.tagBackground, color: project.tagColor }}
+                  >
                     {tag}
                   </span>
                 ))}
@@ -113,7 +130,7 @@ export default function ProjectShowcase() {
                 alt={project.title}
                 width={500}
                 height={400}
-                className="project-img"
+                className={`project-img ${index % 2 === 0 ? 'l-border-radius' : 'r-border-radius'}`}
               />
             </div>
           </div>

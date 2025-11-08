@@ -6,7 +6,10 @@ export default function WorkCTA() {
   return (
     <section className="work-cta-section">
       <div className="work-cta-container">
-        <h3 className="work-cta-label">Ready to Create Your Success Story?</h3>
+        <div className="work-cta-header">
+          <div className="headline-bg font-bald">Ready to Create Your Success Story?</div>
+          <div className="headline-fg font-bald">Ready to Create Your Success Story?</div>
+        </div>
         <h2 className="work-cta-title">
           Join leading brands <span className="text-blue">succeeding with DigiWave.</span>
         </h2>

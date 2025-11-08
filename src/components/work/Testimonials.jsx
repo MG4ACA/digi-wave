@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import './styles/Testimonials.css';
 
 export default function Testimonials() {
@@ -7,7 +8,6 @@ export default function Testimonials() {
       id: 1,
       name: 'Sarah Johnson',
       role: 'Marketing Director',
-      company: 'Tech Solutions Inc.',
       quote:
         'DigiWave transformed our brand presence. Their strategic approach and media connections delivered results beyond our expectations.',
     },
@@ -15,7 +15,6 @@ export default function Testimonials() {
       id: 2,
       name: 'Rajesh Kumar',
       role: 'CEO',
-      company: 'Innovation Labs',
       quote:
         "Working with DigiWave was a game-changer. Their team's creativity and professionalism helped us reach audiences we never thought possible.",
     },
@@ -23,7 +22,6 @@ export default function Testimonials() {
       id: 3,
       name: 'Emily Chen',
       role: 'Brand Manager',
-      company: 'Global Ventures',
       quote:
         "The ROI we achieved through DigiWave's campaigns exceeded all projections. They truly understand the digital landscape.",
     },
@@ -31,17 +29,35 @@ export default function Testimonials() {
 
   return (
     <section className="testimonials-section">
+      <div className="testimonials-header">
+        <div className="testimonials-headline">
+          <div className="headline-bg font-bald">What Our Clients Say</div>
+          <div className="headline-fg font-bald">What Our Clients Say</div>
+        </div>
+        <h2 className="testimonials-title">
+          Real feedback from <span className="text-blue">real partnerships</span>
+        </h2>
+      </div>
       <div className="testimonials-container">
         <div className="testimonials-grid">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="testimonial-card">
-              <div className="testimonial-icon">💬</div>
-              <p className="testimonial-quote">&quot;{testimonial.quote}&quot;</p>
-              <div className="testimonial-author">
-                <h4 className="testimonial-name">{testimonial.name}</h4>
-                <p className="testimonial-role">{testimonial.role}</p>
-                <p className="testimonial-company">{testimonial.company}</p>
+              <div className=" flex gap-3">
+                <div className="testimonial-icon">
+                  <Image
+                    src="/testimonial-male.jpg"
+                    alt="Testimonial Icon"
+                    width={50}
+                    height={50}
+                    className="testimonial-icon"
+                  />
+                </div>
+                <div className="testimonial-author">
+                  <h4 className="testimonial-name">{testimonial.name}</h4>
+                  <p className="testimonial-role">{testimonial.role}</p>
+                </div>
               </div>
+              <p className="testimonial-quote">&quot;{testimonial.quote}&quot;</p>
             </div>
           ))}
         </div>

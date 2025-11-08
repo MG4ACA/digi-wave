@@ -9,7 +9,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
 }
 
 .our-story-left {
@@ -42,7 +41,23 @@
 .our-story-right {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1.5rem;
+  position: relative;
+}
+
+.our-story-headline {
+  position: relative;
+  width: 100%;
+}
+
+.our-story-headline .headline-bg {
+  text-align: start;
+  left: 19%;
+}
+
+.our-story-headline .headline-fg {
+  text-align: start;
 }
 
 .our-story-label {

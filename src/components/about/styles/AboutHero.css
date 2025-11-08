@@ -2,7 +2,7 @@
   position: relative;
   height: 60vh;
   min-height: 400px;
-  background-image: url('/images/hero-background-1.jpg');
+  background-image: url('/about-us/about-us-background.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -16,7 +16,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 56, 133, 0.3318) 0%,
+    rgba(21, 56, 133, 0.79) 32.09%,
+    rgba(21, 56, 133, 0.79) 48.3%,
+    rgba(21, 56, 133, 0.79) 67.61%,
+    rgba(37, 99, 235, 0.3397) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +39,6 @@
 .about-hero-title {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
   color: white;
 }
 
