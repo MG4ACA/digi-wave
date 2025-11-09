@@ -13,10 +13,12 @@
   gap: 2rem;
 }
 
-.advantage-cta-label {
-  font-size: 1.1rem;
-  color: #666;
-  font-weight: 600;
+.advantage-headlines {
+  position: relative;
+  width: 100%;
+}
+.advantage-headlines .headline-bg {
+  width: 100%;
 }
 
 .advantage-cta-title {
@@ -31,18 +33,18 @@
 }
 
 .advantage-cta-button {
-  background: #0066ff !important;
+  background: linear-gradient(90deg, #0046b6 0%, #00ceff 100%);
   border: none !important;
   padding: 1rem 2.5rem !important;
   font-size: 1.1rem !important;
   font-weight: 600 !important;
-  border-radius: 8px !important;
+  border-radius: 14px !important;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .advantage-cta-button:hover {
-  background: #0052cc !important;
+  background: linear-gradient(90deg, #0062ff 0%, #30cef6 100%);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
 }

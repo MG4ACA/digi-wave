@@ -8,13 +8,8 @@
   margin-bottom: 4rem;
 }
 
-.advantages-list-label {
-  font-size: 1rem;
-  color: #666;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
+.advantages-list-headlines {
+  position: relative;
 }
 
 .advantages-list-title {
@@ -33,14 +28,14 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 6rem;
 }
 
 .advantage-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 }
 
 .advantage-card.layout-right {
