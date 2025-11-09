@@ -8,7 +8,7 @@ export default function AboutHero() {
         <div className="about-hero-content">
           <h1 className="about-hero-title">About DigiWave</h1>
           <p className="about-hero-subtitle">
-            Discover the story behind Sri Lanka's next-generation PR and
+            Discover the story behind Sri Lanka&apos;s next-generation PR and
             <br />
             digital marketing agency
           </p>
