@@ -6,7 +6,10 @@ export default function ServicesCTA() {
   return (
     <section className="services-cta-section">
       <div className="services-cta-container">
-        <h3 className="services-cta-label">Ready to Ride the Digital Wave?</h3>
+        <div className="services-cta-headlines">
+          <div className="headline-bg">Ready to Ride the Digital Wave?</div>
+          <div className="headline-fg">Ready to Ride the Digital Wave?</div>
+        </div>
         <h2 className="services-cta-title">
           Let&apos;s build a campaign that drives{' '}
           <span className="text-blue">your vision forward.</span>

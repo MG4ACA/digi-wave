@@ -9,6 +9,7 @@ export default function QuoteForm() {
     <section className="quote-form-section">
       <div className="quote-form-container">
         <div className="quote-form-left">
+          <div className="footer-bg" />
           <div className="contact-info-card">
             <h3 className="contact-title">Contact Us</h3>
 
@@ -56,6 +57,10 @@ export default function QuoteForm() {
         </div>
 
         <div className="quote-form-right">
+          <div className="quote-form-headlines">
+            <div className="headline-bg">Contact Us</div>
+            <div className="headline-fg">Contact Us</div>
+          </div>
           <h2 className="quote-form-title">
             Get Your <span className="text-blue">Free Quote</span> Today
           </h2>
@@ -63,24 +68,29 @@ export default function QuoteForm() {
           <form className="quote-form">
             <div className="form-row">
               <div className="form-group">
-                <InputText placeholder="Your Name" className="form-input" />
+                <label htmlFor="firstName">First Name</label>
+                <InputText id="firstName" className="form-input" />
               </div>
               <div className="form-group">
-                <InputText placeholder="Your Name" className="form-input" />
+                <label htmlFor="lastName">Last Name</label>
+                <InputText id="lastName" className="form-input" />
               </div>
             </div>
 
             <div className="form-row">
               <div className="form-group">
-                <InputText type="email" placeholder="Email" className="form-input" />
+                <label htmlFor="email">Email</label>
+                <InputText type="email" id="email" className="form-input" />
               </div>
               <div className="form-group">
-                <InputText type="tel" placeholder="Phone" className="form-input" />
+                <label htmlFor="phone">Phone</label>
+                <InputText type="tel" id="phone" className="form-input" />
               </div>
             </div>
 
             <div className="form-group">
-              <InputTextarea placeholder="Message" rows={5} className="form-textarea" />
+              <label htmlFor="message">Message</label>
+              <InputTextarea id="message" rows={5} className="form-textarea" />
             </div>
 
             <Button label="Send" className="form-submit-btn" />

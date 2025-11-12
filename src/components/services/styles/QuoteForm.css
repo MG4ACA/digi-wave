@@ -1,6 +1,6 @@
 .quote-form-section {
   padding: 5rem 2rem;
-  background: white;
+  background: #f7f8f9;
 }
 
 .quote-form-container {
@@ -14,6 +14,7 @@
 .quote-form-left {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .contact-info-card {
@@ -84,7 +85,6 @@
 .quote-form-right {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .quote-form-title {
@@ -93,14 +93,10 @@
   color: #1a1a1a;
 }
 
-.text-blue {
-  color: #0066ff;
-}
-
 .quote-form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .form-row {
@@ -117,8 +113,9 @@
 .form-input,
 .form-textarea {
   width: 100%;
+  background: #f0f0f0;
   padding: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #dedede !important;
   border-radius: 8px;
   font-size: 0.95rem;
   transition: border-color 0.3s ease;
@@ -136,10 +133,10 @@
 }
 
 .form-submit-btn {
-  background: #0066ff !important;
+  background: #0046b6 !important;
   border: none !important;
-  padding: 1rem 3rem !important;
-  font-size: 1rem !important;
+  padding: 0.75rem 3rem !important;
+  font-size: 0.95rem !important;
   font-weight: 600 !important;
   border-radius: 8px !important;
   cursor: pointer;
@@ -148,9 +145,23 @@
 }
 
 .form-submit-btn:hover {
-  background: #0052cc !important;
+  background: #0046b6 !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+}
+
+.contact-info-card {
+  background: none;
+  z-index: 1;
+}
+
+.quote-form-headlines {
+  position: relative;
+  width: 100%;
+}
+
+.quote-form-headlines .headline-fg {
+  text-align: start;
 }
 
 @media (max-width: 968px) {
