@@ -2,7 +2,7 @@
   position: relative;
   height: 50vh;
   min-height: 350px;
-  background-image: url('/images/hero-background-3.jpg');
+  background-image: url('/services/services-background.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -16,7 +16,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 56, 133, 0.3318) 0%,
+    rgba(21, 56, 133, 0.79) 32.09%,
+    rgba(21, 56, 133, 0.79) 48.3%,
+    rgba(21, 56, 133, 0.79) 67.61%,
+    rgba(37, 99, 235, 0.3397) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;

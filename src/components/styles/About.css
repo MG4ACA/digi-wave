@@ -131,18 +131,6 @@
   transform: translateY(-2px);
 }
 
-.service-icon {
-  width: 48px;
-  height: 48px;
-  background: #e6f0ff;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-  color: #0046b6;
-}
-
 .service-title {
   font-size: 1.25rem;
   font-weight: 600;
