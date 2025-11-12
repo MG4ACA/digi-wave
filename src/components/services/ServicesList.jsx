@@ -122,8 +122,8 @@ export default function ServicesList() {
     <section className="services-list-section">
       <div className="services-list-header">
         <div className="services-list-headlines">
-          <div className="headline-bg font-bald">Our Core Services</div>
-          <div className="headline-fg font-bald">Our Core Services</div>
+          <div className="headline-bg">Our Core Services</div>
+          <div className="headline-fg">Our Core Services</div>
         </div>
         <h2 className="services-list-title">
           Comprehensive solutions to <span className="text-blue">elevate your brand</span>

@@ -31,8 +31,8 @@ export default function Testimonials() {
     <section className="testimonials-section">
       <div className="testimonials-header">
         <div className="testimonials-headline">
-          <div className="headline-bg font-bald">What Our Clients Say</div>
-          <div className="headline-fg font-bald">What Our Clients Say</div>
+          <div className="headline-bg">What Our Clients Say</div>
+          <div className="headline-fg">What Our Clients Say</div>
         </div>
         <h2 className="testimonials-title">
           Real feedback from <span className="text-blue">real partnerships</span>

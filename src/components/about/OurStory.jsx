@@ -38,8 +38,8 @@ export default function OurStory() {
 
         <div className="our-story-right">
           <div className="our-story-headline">
-            <div className="headline-bg font-bald">Our Story</div>
-            <div className="headline-fg font-bald">Our Story</div>
+            <div className="headline-bg">Our Story</div>
+            <div className="headline-fg">Our Story</div>
           </div>
           <h2 className="our-story-title">
             Tranforming <span className="text-blue">ideas</span>

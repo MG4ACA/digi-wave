@@ -73,8 +73,8 @@ export default function TeamSection() {
   return (
     <section className="team-section" data-aos="fade-up">
       <div className="team-headline">
-        <div className="headline-bg font-bald">Our Team</div>
-        <div className="headline-fg font-bald">Our Team</div>
+        <div className="headline-bg">Our Team</div>
+        <div className="headline-fg">Our Team</div>
       </div>
       <div className="team-title">
         Meet Our <span className="team-title-accent">Expert Team</span>

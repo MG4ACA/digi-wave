@@ -23,8 +23,8 @@ export default function WhyChooseUs() {
   return (
     <section className="why-choose-section" data-aos="fade-up">
       <div className="why-choose-headline">
-        <div className="headline-bg font-bald">Why Choose Us</div>
-        <div className="headline-fg font-bald">Why Choose Us</div>
+        <div className="headline-bg">Why Choose Us</div>
+        <div className="headline-fg">Why Choose Us</div>
       </div>
       <div className="why-choose-sub">We fuse creativity and technology to grow your brand.</div>
       <div className="why-choose-features">

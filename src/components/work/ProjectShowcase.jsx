@@ -76,8 +76,8 @@ export default function ProjectShowcase() {
     <section className="project-showcase-section">
       <div className="project-showcase-header">
         <div className="project-showcase-headline">
-          <div className="headline-bg font-bald">Featured Projects</div>
-          <div className="headline-fg font-bald">Featured Projects</div>
+          <div className="headline-bg">Featured Projects</div>
+          <div className="headline-fg">Featured Projects</div>
         </div>
         <h2 className="project-showcase-title">
           Real campaigns, <span className="text-blue">Real results, Real impact</span>

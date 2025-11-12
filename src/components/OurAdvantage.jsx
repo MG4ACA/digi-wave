@@ -36,8 +36,8 @@ export default function OurAdvantage() {
     <section className="our-advantage-section" data-aos="fade-left">
       <div className="our-advantage-content">
         <div className="our-advantage-headline">
-          <div className="headline-bg font-bald">Our Latest projects</div>
-          <div className="headline-fg font-bald">Our Latest Projects</div>
+          <div className="headline-bg">Our Latest projects</div>
+          <div className="headline-fg">Our Latest Projects</div>
         </div>
         <div className="our-advantage-title">
           Explore Our Showcase of <span className="featured-work">Featured Work</span>
