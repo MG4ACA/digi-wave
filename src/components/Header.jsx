@@ -1,10 +1,17 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Button } from 'primereact/button';
 import './styles/Header.css';
 
 export default function Header() {
+  const pathname = usePathname();
+
+  const getNavLinkClass = (path) => {
+    return `nav-link ${pathname === path ? 'active' : ''}`;
+  };
+
   return (
     <header className="header">
       <div className="header-content">
@@ -13,22 +20,22 @@ export default function Header() {
         </div>
 
         <nav className="nav-menu">
-          <Link href="/" className="nav-link active">
+          <Link href="/" className={getNavLinkClass('/')}>
             Home
           </Link>
-          <Link href="/about" className="nav-link">
+          <Link href="/about" className={getNavLinkClass('/about')}>
             About Us
           </Link>
-          <Link href="/services" className="nav-link">
+          <Link href="/services" className={getNavLinkClass('/services')}>
             Our Services
           </Link>
-          <Link href="/our-advantage" className="nav-link">
+          <Link href="/our-advantage" className={getNavLinkClass('/our-advantage')}>
             Our Advantage
           </Link>
-          <Link href="/our-work" className="nav-link">
+          <Link href="/our-work" className={getNavLinkClass('/our-work')}>
             Our Work
           </Link>
-          <Link href="/contact" className="nav-link">
+          <Link href="/contact" className={getNavLinkClass('/contact')}>
             Contact Us
           </Link>
         </nav>
