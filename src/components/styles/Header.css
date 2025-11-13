@@ -54,13 +54,15 @@
   display: none;
   background: none !important;
   border: none !important;
-  color: #333 !important;
+  color: #ffffff !important;
   font-size: 1.5rem !important;
   padding: 0.5rem !important;
+  font-weight: 800;
+  width: 4rem !important;
 }
 
 .mobile-menu-btn:hover {
-  background: rgba(0, 70, 182, 0.1) !important;
+  background: none !important;
 }
 
 /* Mobile Responsive */
@@ -82,8 +84,13 @@
     width: 100%;
     padding: 1rem 0;
     gap: 0;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px) saturate(65%);
+    -webkit-backdrop-filter: blur(5px) saturate(65%);
+    background-color: #d4d4d442;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    background-image: radial-gradient(at 71% -9%, #0c55d5d1 0, #2196f300 52%),
+      radial-gradient(at 27% 9%, hsl(254deg 0% 100% / 73%) 0, transparent 40%);
   }
 
   .nav-menu.mobile-open {
@@ -98,8 +105,9 @@
   .nav-link {
     width: 100%;
     padding: 1rem;
-    border-bottom: 1px solid #f0f0f0;
     text-align: center;
+    color: #c9c9c9;
+    border-radius: 14px;
   }
 
   .nav-link:last-child {
