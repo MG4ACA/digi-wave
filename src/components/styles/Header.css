@@ -21,6 +21,7 @@
 
 .logo-section {
   flex-shrink: 0;
+  z-index: 1;
 }
 
 .nav-menu {
@@ -54,19 +55,58 @@
   background: none !important;
   border: none !important;
   color: #333 !important;
+  font-size: 1.5rem !important;
+  padding: 0.5rem !important;
+}
+
+.mobile-menu-btn:hover {
+  background: rgba(0, 70, 182, 0.1) !important;
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  .header {
+    height: auto;
+    min-height: 10vh;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
   .nav-menu {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.mobile-open {
+    display: flex;
+    position: absolute;
+    top: 0;
+    /* left: 0;
+    right: 0;
+    z-index: 1000; */
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+  }
+
+  .nav-link:last-child {
+    border-bottom: none;
   }
 
   .mobile-menu-btn {
     display: flex !important;
-  }
-
-  .header-content {
-    justify-content: space-between;
   }
 }
