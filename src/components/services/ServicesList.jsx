@@ -157,19 +157,19 @@ export default function ServicesList() {
               <div className="service-items">
                 <div className="service-item service-item-01">
                   <span className="item-name">Channel 19 Package</span>
-                  <span className="item-price font-color-01">Rs 170,000</span>
+                  {/* <span className="item-price font-color-01">Rs 170,000</span> */}
                 </div>
                 <div className="service-item service-item-01">
                   <span className="item-name">NewsCenter.lk Package</span>
-                  <span className="item-price font-color-01">Rs 180,000</span>
+                  {/* <span className="item-price font-color-01">Rs 180,000</span> */}
                 </div>
                 <div className="service-item service-item-01">
                   <span className="item-name font-bold">DERANA Seda Mawatha</span>
-                  <span className="item-price font-color-01">Rs 200,000 + VAT</span>
+                  {/* <span className="item-price font-color-01">Rs 200,000 + VAT</span> */}
                 </div>
                 <div className="service-item service-item-01">
                   <span className="item-name font-bold">RUPAWAHIN Nugasewana</span>
-                  <span className="item-price font-color-01">Rs 175,000 + VAT</span>
+                  {/* <span className="item-price font-color-01">Rs 175,000 + VAT</span> */}
                 </div>
               </div>
 
@@ -178,7 +178,7 @@ export default function ServicesList() {
                 <span className="item-name">
                   Drafting in English/Sinhala/Tamil, delivery to all media, minimum 8 articles
                 </span>
-                <span className="item-name item-price">Investment: Rs. 70,000</span>
+                {/* <span className="item-name item-price">Investment: Rs. 70,000</span> */}
               </div>
 
               <div className="service-items-set mt-2">
@@ -186,7 +186,7 @@ export default function ServicesList() {
                 <span className="item-name">
                   Full management, media invitations, spokesperson prep, minimum 10 articles
                 </span>
-                <span className="item-name item-price"> Investment: Rs. 180,000</span>
+                {/* <span className="item-name item-price"> Investment: Rs. 180,000</span> */}
               </div>
 
               <div className="service-items-set mt-2">
@@ -194,7 +194,7 @@ export default function ServicesList() {
                 <span className="item-name">
                   Strategic planning, coordination, tri-lingual releases, minimum 10 articles{' '}
                 </span>
-                <span className="item-name item-price">Investment: Rs. 150,000</span>
+                {/* <span className="item-name item-price">Investment: Rs. 150,000</span> */}
               </div>
             </div>
           </div>
@@ -232,19 +232,19 @@ export default function ServicesList() {
               <div className="packages-grid">
                 <div className="package-item">
                   <span className="package-name">News Center</span>
-                  <span className="package-price font-color-02">Rs 30,000</span>
+                  {/* <span className="package-price font-color-02">Rs 30,000</span> */}
                 </div>
                 <div className="package-item">
                   <span className="package-name">Wayaba.lk</span>
-                  <span className="package-price font-color-02">Rs 20,000</span>
+                  {/* <span className="package-price font-color-02">Rs 20,000</span> */}
                 </div>
                 <div className="package-item">
                   <span className="package-name">CEYLONWIRE</span>
-                  <span className="package-price font-color-02">Rs 25,000</span>
+                  {/* <span className="package-price font-color-02">Rs 25,000</span> */}
                 </div>
                 <div className="package-item">
                   <span className="package-name">DailyTimes</span>
-                  <span className="package-price font-color-02">Rs 22,000</span>
+                  {/* <span className="package-price font-color-02">Rs 22,000</span> */}
                 </div>
               </div>
             </div>
@@ -254,13 +254,13 @@ export default function ServicesList() {
               <div className="service-items">
                 <div className="campaign-item">
                   <span className="campaign-name font-bold">I LOVE YOU (2.3M followers)</span>
-                  <span className="campaign-price font-color-02">Rs 45,000</span>
+                  {/* <span className="campaign-price font-color-02">Rs 45,000</span> */}
                 </div>
                 <div className="campaign-item">
                   <span className="campaign-name font-bold">
                     SOORA WEERA KELLO (1.5M followers)
                   </span>
-                  <span className="campaign-price font-color-02">Rs 35,000</span>
+                  {/* <span className="campaign-price font-color-02">Rs 35,000</span> */}
                 </div>
               </div>
             </div>
@@ -320,7 +320,7 @@ export default function ServicesList() {
             <div className="service-items">
               <div className="service-item service-item-03">
                 <span className="item-name">Crisis Management Package</span>
-                <span className="item-price font-color-03">Rs 200,000 +VAT</span>
+                {/* <span className="item-price font-color-03">Rs 200,000 +VAT</span> */}
               </div>
               <div className="check-list">
                 <span className="feature-check font-color-03">✓</span>
@@ -389,13 +389,16 @@ export default function ServicesList() {
                   ISO, HyperDeck Studio HD Pro, MAVIC 3 CINE Drone, and professional crew
                 </span>
                 <span className="item-name-full font-color-04" style={{ fontSize: '0.8rem' }}>
-                  Live Stream Production: Rs. 500,000 (Colombo)
+                  Live Stream Production
+                  {/* : Rs. 500,000 (Colombo) */}
                 </span>
                 <span className="item-name-full font-color-04 " style={{ fontSize: '0.8rem' }}>
-                  Media Event Coverage: Rs. 150,000 (Conditions Apply)
+                  Media Event Coverage
+                  {/* : Rs. 150,000 (Conditions Apply) */}
                 </span>
                 <span className="item-name-full font-color-04 " style={{ fontSize: '0.8rem' }}>
-                  Press Conference Management: Rs. 180,000
+                  Press Conference Management
+                  {/* : Rs. 180,000 */}
                 </span>
               </div>
               <div className="check-list">
@@ -451,21 +454,21 @@ export default function ServicesList() {
             <div className="service-items">
               <div className="service-item service-item-05">
                 <span className="item-name">Strategic Web Article Placement</span>
-                <span className="item-price font-color-05">
+                {/* <span className="item-price font-color-05">
                   Rs. 20,000/article <span className="font-color-05 pi pi-arrow-up"></span>
-                </span>
+                </span> */}
               </div>
               <span className="item-name">Professional Video Production & Social Content </span>
               <section className="service-items mb-0">
                 <div className="service-item service-item-05">
-                  <span className="item-name">Video Podcast & Web News  Package:</span>
-                  <span className="item-price font-color-05">Rs. 170,000 - Rs. 180,000</span>
+                  <span className="item-name">Video Podcast & Web News  {/* Package: */}</span>
+                  {/* <span className="item-price font-color-05">Rs. 170,000 - Rs. 180,000</span> */}
                 </div>
                 <div className="service-item service-item-05">
-                  <span className="item-name">Influencer-Generated Content: </span>
-                  <span className="item-price font-color-05">
+                  <span className="item-name">Influencer-Generated Content </span>
+                  {/* <span className="item-price font-color-05">
                     Rs. 20,000 <span className="font-color-05 pi pi-arrow-up"></span>
-                  </span>
+                  </span> */}
                 </div>
               </section>
             </div>
@@ -525,11 +528,11 @@ export default function ServicesList() {
               <section className="service-items">
                 <div className="service-item service-item-06">
                   <span className="item-name">Annual Report & Financial Communications</span>
-                  <span className="item-price font-color-06">Rs. 300,000 + VAT</span>
+                  {/* <span className="item-price font-color-06">Rs. 300,000 + VAT</span> */}
                 </div>
                 <div className="service-item service-item-06">
                   <span className="item-name">Stakeholder Briefing & Press Release Package</span>
-                  <span className="item-price font-color-06">Rs. 70,000</span>
+                  {/* <span className="item-price font-color-06">Rs. 70,000</span> */}
                 </div>
               </section>
             </div>

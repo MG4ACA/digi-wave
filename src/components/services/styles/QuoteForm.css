@@ -87,6 +87,15 @@
   flex-direction: column;
 }
 
+.quote-form-headlines {
+  position: relative;
+  width: 100%;
+}
+
+.quote-form-headlines .headline-fg {
+  text-align: start;
+}
+
 .quote-form-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -153,15 +162,6 @@
 .contact-info-card {
   background: none;
   z-index: 1;
-}
-
-.quote-form-headlines {
-  position: relative;
-  width: 100%;
-}
-
-.quote-form-headlines .headline-fg {
-  text-align: start;
 }
 
 @media (max-width: 968px) {

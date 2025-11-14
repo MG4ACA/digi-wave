@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import ProjectShowcase from '@/components/work/ProjectShowcase';
+import ProjectShowcaseCarosal from '@/components/work/ProjectShowcaseCarosal';
 import Testimonials from '@/components/work/Testimonials';
 import WorkCTA from '@/components/work/WorkCTA';
 import WorkHero from '@/components/work/WorkHero';
@@ -11,7 +11,8 @@ export default function OurWorkPage() {
     <main>
       <Header />
       <WorkHero />
-      <ProjectShowcase />
+      {/* <ProjectShowcase /> */}
+      <ProjectShowcaseCarosal />
       <WorkStats />
       <Testimonials />
       <WorkCTA />

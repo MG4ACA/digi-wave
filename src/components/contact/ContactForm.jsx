@@ -8,17 +8,19 @@ export default function ContactForm() {
   return (
     <section className="contact-form-section">
       <div className="contact-intro">
-        <h3 className="contact-intro-label">We&apos;re Here to Help</h3>
-        <p className="contact-intro-text">
-          Have a project in mind? Want to learn how we bring your brand to life through PR and
-          digital expertise
-          <br />
+        <div className="contact-intro-headlines">
+          <div className="headline-bg">We&apos;re Here to Help</div>
+          <div className="headline-fg">We&apos;re Here to Help</div>
+        </div>{' '}
+        <p className="contact-intro-text text-blue">
+          Have a project in mind? Want to learn how our exclusive media access and digital expertise
           can elevate your brand? We&apos;re just a message away.
         </p>
       </div>
 
       <div className="contact-form-container">
         <div className="contact-info-section">
+          <div className="footer-bg" />
           <div className="contact-info-card">
             <h3 className="contact-info-title">Get In Touch</h3>
 
@@ -66,6 +68,10 @@ export default function ContactForm() {
         </div>
 
         <div className="contact-form-section-right">
+          <div className="contact-intro-headlines">
+            <div className="headline-bg">Contact Us</div>
+            <div className="headline-fg text-left">Contact Us</div>
+          </div>
           <h2 className="contact-form-title">
             Get Your <span className="text-blue">Free Quote</span> Today
           </h2>
@@ -73,24 +79,29 @@ export default function ContactForm() {
           <form className="contact-form">
             <div className="contact-form-row">
               <div className="contact-form-group">
-                <InputText placeholder="Your Name" className="contact-form-input" />
+                <label htmlFor="firstName">First Name</label>
+                <InputText id="firstName" className="contact-form-input" />{' '}
               </div>
               <div className="contact-form-group">
-                <InputText placeholder="Your Name" className="contact-form-input" />
+                <label htmlFor="lastName">Last Name</label>
+                <InputText id="lastName" className="contact-form-input" />{' '}
               </div>
             </div>
 
             <div className="contact-form-row">
               <div className="contact-form-group">
-                <InputText type="email" placeholder="Email" className="contact-form-input" />
+                <label htmlFor="email">Email</label>
+                <InputText type="email" id="email" className="contact-form-input" />{' '}
               </div>
               <div className="contact-form-group">
-                <InputText type="tel" placeholder="Phone" className="contact-form-input" />
+                <label htmlFor="phone">Phone</label>
+                <InputText type="tel" id="phone" className="contact-form-input" />{' '}
               </div>
             </div>
 
             <div className="contact-form-group">
-              <InputTextarea placeholder="Message" rows={5} className="contact-form-textarea" />
+              <label htmlFor="message">Message</label>
+              <InputTextarea id="message" rows={5} className="contact-form-textarea" />{' '}
             </div>
 
             <Button label="Send" className="contact-form-submit-btn" />

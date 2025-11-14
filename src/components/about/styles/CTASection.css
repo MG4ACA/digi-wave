@@ -13,10 +13,9 @@
   gap: 2rem;
 }
 
-.cta-label {
-  font-size: 1.1rem;
-  color: #666;
-  font-weight: 600;
+.cta-headlines {
+  position: relative;
+  width: 100%;
 }
 
 .cta-title {
@@ -31,7 +30,7 @@
 }
 
 .cta-button {
-  background: #0066ff !important;
+  background: linear-gradient(90deg, #0046b6 0%, #001f50 100%);
   border: none !important;
   padding: 1rem 2.5rem !important;
   font-size: 1.1rem !important;
@@ -42,7 +41,7 @@
 }
 
 .cta-button:hover {
-  background: #0052cc !important;
+  background: linear-gradient(90deg, #001f50 0%, #0046b6 100%) !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
 }
