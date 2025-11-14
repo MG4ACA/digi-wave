@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import './styles/Footer.css';
 
 export default function Footer() {
@@ -27,19 +28,19 @@ export default function Footer() {
           <div className="footer-title">Quick Links</div>
           <ul>
             <li>
-              <a href="#about">About Us</a>
+              <Link href="/about">About Us</Link>
             </li>
             <li>
-              <a href="#services">Our Services</a>
+              <Link href="/services">Our Services</Link>
             </li>
             <li>
-              <a href="#advantage">Our Advantage</a>
+              <Link href="/our-advantage">Our Advantage</Link>
             </li>
             <li>
-              <a href="#work">Our Work</a>
+              <Link href="/our-work">Our Work</Link>
             </li>
             <li>
-              <a href="#contact">Contact Us</a>
+              <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>

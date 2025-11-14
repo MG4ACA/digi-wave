@@ -10,29 +10,28 @@ export default function OurStory() {
           <div className="story-images">
             <div className="story-image-large">
               <Image
-                src="/images/project-images-1.jpg"
+                src="/about-us/about-us-images-2.jpg"
                 alt="DigiWave Event"
-                width={400}
-                height={300}
+                width={300}
+                height={225}
                 className="story-img"
               />
-            </div>
-            <div className="story-images-small">
               <Image
-                src="/images/project-images-2.jpg"
+                src="/about-us/about-us-images.jpg"
                 alt="DigiWave Team"
                 width={180}
                 height={140}
-                className="story-img"
+                className="story-img-02 story-img"
               />
               <Image
-                src="/images/hero-background-2.jpg"
+                src="/about-us/about-us-background.jpg"
                 alt="DigiWave Work"
                 width={180}
                 height={140}
-                className="story-img"
+                className="story-img-03 story-img w-10"
               />
             </div>
+            <div className="story-images-small"></div>
           </div>
         </div>
 

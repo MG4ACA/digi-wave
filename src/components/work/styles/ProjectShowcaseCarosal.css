@@ -55,6 +55,7 @@
 /* PrimeReact Carousel Customization */
 .project-carousel .p-carousel-content {
   background: transparent;
+  margin-top: 2rem;
 }
 
 .project-carousel .p-carousel-indicators {
