@@ -40,7 +40,7 @@ export default function Services() {
         <div className="services-grid">
           {services.map((service, idx) => (
             <div className="service-card" key={idx} data-aos="fade-in" data-aos-delay={idx * 100}>
-              <div className="service-icon">
+              <div className="service-icons">
                 <Image src={service.icon} alt={service.title + ' icon'} width={32} height={32} />
               </div>
               <div className="service-title">{service.title}</div>

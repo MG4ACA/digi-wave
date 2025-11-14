@@ -16,6 +16,7 @@
   z-index: 0;
   background: url('/images/footer-background.png') center/cover no-repeat;
   opacity: 1;
+  border-radius: 14px;
 }
 .footer-content {
   position: relative;
