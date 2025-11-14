@@ -1,140 +1,63 @@
 'use client';
 import Image from 'next/image';
+import { Carousel } from 'primereact/carousel';
 import './styles/ProjectShowcaseCarosal.css';
 
-export default function ProjectShowcase() {
-  const projects = [
-    {
-      id: 1,
-      number: '1',
-      color: 'blue',
-      title: 'Galle Food Festival',
-      challenge:
-        'To generate massive public turnout and nationwide media coverage for a premier culinary event in Galle.',
-      solution:
-        'A multi-pronged campaign combining targeted social media promotions, influencer collaborations, and a strategic press outreach across our exclusive print, television, and digital media network.',
-      results:
-        '"Galle Food Fest a big success." The event saw record-breaking attendance and was featured prominently in major news outlets, becoming the talk of the town.',
-      image: '/our-work/food-festival-01.jpg',
-      tags: ['Event Management', 'Media Coverage', 'Social Media', 'PR Campaign'],
-      tagColor: '#0046B6',
-      tagBackground: '#DBEAFE',
-    },
-    {
-      id: 2,
-      number: '2',
-      color: 'purple',
-      title: 'ELVE in Concert',
-      challenge: 'Build buzz and sell out a high-profile international concert in Sri Lanka.',
-      solution:
-        'We crafted a powerful narrative around the event, leveraging digital advertising to target specific demographics and executing a PR blitz that included radio interviews, preview articles, and strategic social media countdowns.',
-      results:
-        'A highly successful and widely discussed concert, with strong media coverage and positive public sentiment.',
-      image: '/our-work/elve-concert.jpg',
-      tags: ['Digital Advertising', 'PR Campaign', 'Radio Interviews', 'Social Media'],
-      tagColor: '#723C92',
-      tagBackground: '#F5DBFE',
-    },
-    {
-      id: 3,
-      number: '3',
-      color: 'orange',
-      title: 'Strong Navy Campaign',
-      challenge: 'To enhance the public image and recruitment drive for a naval organization.',
-      solution:
-        'A patriotic and empowering brand journalism and PR campaign, highlighting the strength and legacy of the navy through compelling video content, feature articles, and targeted community engagement.',
-      results:
-        "Increased brand affinity and successful stakeholder communication, strengthening the organization's public profile.",
-      image: '/our-work/strong-navy-campaign.jpg',
-      tags: [
-        'Brand Journalism',
-        'Video Content',
-        'Community Engagement',
-        'Stakeholder Communication',
-      ],
-      tagColor: '#D57604',
-      tagBackground: '#FEEBDB',
-    },
-    {
-      id: 4,
-      number: '4',
-      color: 'green',
-      title: 'Monik Legacy 24 - "We Thrive Together"',
-      challenge: 'To launch a new brand or initiative with a powerful, community-focused message.',
-      solution:
-        'A full-scale launch event managed by our sister company, Wickramanayake Event, amplified by DigiWave\'s integrated PR and digital strategy. We used the "We Thrive Together" mantra to build a movement, not just a campaign.',
-      results:
-        "A powerful and cohesive brand launch that successfully established the new entity's identity.",
-      image: '/our-work/monik-legacy.jpg',
-      tags: ['Brand Launch', 'Event Management', 'Integrated PR', 'Digital Strategy'],
-      tagColor: '#008E34',
-      tagBackground: '#DBFEEF',
-    },
+export default function ProjectShowcaseCarosal() {
+  const images = [
+    { id: 1, src: '/our-work/our-work-images-1.jpg', alt: 'Project Showcase 1' },
+    { id: 2, src: '/our-work/our-work-images-2.jpg', alt: 'Project Showcase 2' },
+    { id: 3, src: '/our-work/our-work-images-3.jpg', alt: 'Project Showcase 3' },
+    { id: 4, src: '/our-work/our-work-images-4.jpg', alt: 'Project Showcase 4' },
+    { id: 5, src: '/our-work/our-work-images-5.jpg', alt: 'Project Showcase 5' },
+    { id: 6, src: '/our-work/our-work-images-6.jpg', alt: 'Project Showcase 6' },
+    { id: 7, src: '/our-work/our-work-images-7.jpg', alt: 'Project Showcase 7' },
+    { id: 8, src: '/our-work/our-work-images-8.jpg', alt: 'Project Showcase 8' },
+    { id: 9, src: '/our-work/our-work-images-9.jpg', alt: 'Project Showcase 9' },
+    { id: 10, src: '/our-work/our-work-images-10.jpg', alt: 'Project Showcase 10' },
+    { id: 11, src: '/our-work/our-work-images-11.jpg', alt: 'Project Showcase 11' },
+    { id: 12, src: '/our-work/our-work-images-12.jpg', alt: 'Project Showcase 12' },
+    { id: 13, src: '/our-work/our-work-images-13.jpg', alt: 'Project Showcase 13' },
+    { id: 14, src: '/our-work/our-work-images-14.jpg', alt: 'Project Showcase 14' },
   ];
 
-  return (
-    <section className="project-showcase-section">
-      <div className="project-showcase-header">
-        <div className="project-showcase-headline">
-          <div className="headline-bg">Featured Projects</div>
-          <div className="headline-fg">Featured Projects</div>
-        </div>
-        <h2 className="project-showcase-title">
-          Real campaigns, <span className="text-blue">Real results, Real impact</span>
-        </h2>
+  const imageTemplate = (image) => {
+    return (
+      <div className="carousel-image-wrapper">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          width={1200}
+          height={700}
+          className="carousel-image"
+          priority={image.id <= 3}
+        />
       </div>
+    );
+  };
 
-      <div className="project-showcase-container">
-        {projects.map((project, index) => (
-          <div
-            key={project.id}
-            className={`project-card ${index % 2 === 0 ? 'layout-right' : 'layout-left'}`}
-          >
-            <div className="project-content">
-              <div className="flex align-items-center gap-3">
-                <div className={`project-number-badge bg-${project.color}`}>{project.number}</div>
-                <h3 className="project-title">{project.title}</h3>
-              </div>
-
-              <div className="project-section">
-                <h4 className="project-section-title">The Challenge</h4>
-                <p className="project-section-text">{project.challenge}</p>
-              </div>
-
-              <div className="project-section">
-                <h4 className="project-section-title">Our Solution</h4>
-                <p className="project-section-text">{project.solution}</p>
-              </div>
-
-              <div className="project-section">
-                <h4 className="project-section-title">The Results</h4>
-                <p className="project-section-text">{project.results}</p>
-              </div>
-
-              <div className="project-tags">
-                {project.tags.map((tag, idx) => (
-                  <span
-                    key={idx}
-                    className="project-tag"
-                    style={{ background: project.tagBackground, color: project.tagColor }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="project-image">
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={500}
-                height={400}
-                className={`project-img ${index % 2 === 0 ? 'l-border-radius' : 'r-border-radius'}`}
-              />
-            </div>
+  return (
+    <section className="project-carousel-section">
+      <div className="project-carousel-container">
+        <div className="carousel-header">
+          <div className="carousel-headlines">
+            <div className="headline-bg">Our Work Gallery</div>
+            <div className="headline-fg">Our Work Gallery</div>
           </div>
-        ))}
+          <h2 className="carousel-title">
+            Explore Our <span className="text-blue">Success Stories</span>
+          </h2>
+        </div>
+
+        <Carousel
+          value={images}
+          numVisible={1}
+          numScroll={1}
+          itemTemplate={imageTemplate}
+          circular
+          autoplayInterval={4000}
+          className="project-carousel"
+        />
       </div>
     </section>
   );
