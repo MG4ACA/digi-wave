@@ -15,8 +15,8 @@ const teamMembers = [
     img: '/images/team-member-images-2.jpeg',
   },
   {
-    name: 'Member 3',
-    role: 'Position',
+    name: 'Sachithra Wickramanayake',
+    role: 'CEO & Director',
     img: '/images/team-member-images-3.jpeg',
   },
   {
@@ -71,10 +71,10 @@ export default function TeamSection() {
   }, [currentIndex, prev, next]);
 
   return (
-    <section className="team-section">
+    <section className="team-section" data-aos="fade-up">
       <div className="team-headline">
-        <div className="headline-bg font-bald">Our Team</div>
-        <div className="headline-fg font-bald">Our Team</div>
+        <div className="headline-bg">Our Team</div>
+        <div className="headline-fg">Our Team</div>
       </div>
       <div className="team-title">
         Meet Our <span className="team-title-accent">Expert Team</span>

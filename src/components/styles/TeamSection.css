@@ -139,11 +139,18 @@
 }
 .team-section {
   width: 100%;
-  margin: 64px 0 32px 0;
+  padding: 64px 0 32px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(
+    100.56deg,
+    #dbeafe 12.2%,
+    #ffffff 50.97%,
+    #ffffff 57.06%,
+    #dbeafe 100%
+  );
 }
 .team-headline {
   width: 100%;

@@ -50,9 +50,12 @@
   gap: 1rem;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
+  .hero-container {
+    margin-top: 10rem;
+  }
   .cta-buttons {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
@@ -100,7 +103,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: linear-gradient(90deg, #d9d9d9 0%, #00112b 100%);
+  background: linear-gradient(23deg, #d9d9d9 0%, #10356d54 62%);
   opacity: 0.55;
   z-index: 1;
 }
@@ -108,5 +111,5 @@
   opacity: 1;
 }
 .fade-out {
-  opacity: 0.2;
+  opacity: 0.7;
 }

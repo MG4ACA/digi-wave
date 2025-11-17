@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 
-.service-icon {
+.service-icons {
   width: 56px;
   height: 56px;
   margin: 0 auto 1rem auto;
@@ -63,7 +63,7 @@
   justify-content: center;
   overflow: hidden;
 }
-.service-icon img {
+.service-icons img {
   width: 32px;
   height: 32px;
   object-fit: contain;
